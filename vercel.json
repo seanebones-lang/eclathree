@@ -1,4 +1,7 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
   "rewrites": [
     {
       "source": "/api/:path*",
@@ -9,5 +12,8 @@
     "app/**/*.tsx": {
       "maxDuration": 60
     }
+  },
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://elca-blockbusters-api.onrender.com"
   }
 }
